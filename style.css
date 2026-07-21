@@ -1,0 +1,180 @@
+/* Remove default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#222;
+    color:white;
+    padding:20px;
+    z-index:1000;
+}
+
+header h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+/* Navigation */
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Main */
+main{
+    margin-top:130px;
+}
+
+/* ================= Sections ================= */
+
+section{
+    position:relative;
+    background:white;
+    width:80%;
+    margin:30px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+section h2{
+    margin-bottom:20px;
+}
+
+/* ================= About ================= */
+
+#about{
+    text-align:center;
+}
+
+#about img{
+    width:250px;
+    height:300px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* ================= Skills ================= */
+
+dl dt{
+    font-weight:bold;
+    margin-top:15px;
+}
+
+dl dd{
+    margin-left:20px;
+}
+
+/* ================= Projects ================= */
+
+article{
+    position:relative;
+    border:1px solid #ddd;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Position Example */
+article a{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+article a:hover{
+    background:#444;
+}
+
+/* ================= Contact ================= */
+
+form{
+    width:70%;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    padding:10px 20px;
+    background:#222;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#444;
+}
+
+/* ================= Footer ================= */
+
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
